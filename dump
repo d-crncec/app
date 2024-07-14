@@ -1,0 +1,85 @@
+php operatori
+
+<?php
+// Definiranje varijabli
+$a = 10;
+$b = 5;
+$c = 'Algebra';
+$d = 'Backend Developer';
+// Ispis rezultata aritmetičkih operatora
+echo $a + $b;
+echo $a - $b;
+echo $a * $b;
+echo $a / $b;
+echo $a % $b;
+// Konkatenacija
+$f = $c.'-'.$d;
+echo $f;
+// Kombinirani operator dodjele
+$a += $b;
+echo $a;
+// Uperator usporedbe (veće od)
+var_dump($a > $b);
+// Operator inkrementa
+echo ++$a;
+// Operator dekrementa
+echo --$b;æ
+
+
+****
+
+<?php
+// Definiranje varijabli
+$a = 10;
+$b = 5;
+$c = 'Algebra';
+$d = 'Backend Developer';
+// Ispis rezultata aritmetičkih operatora
+echo $a + $b;
+echo $a - $b;
+echo $a * $b;
+echo $a / $b;
+echo $a % $b;
+// Konkatenacija
+$f = $c.'-'.$d;
+echo $f;
+// Kombinirani operator dodjele
+$a += $b;
+echo $a;
+// Uperator usporedbe (veće od)
+var_dump($a > $b);
+// Operator inkrementa
+echo ++$a;
+// Operator dekrementa
+echo --$b;
+
+<?php
+// definiranje varijabli
+$integer = 10;
+$float = 2.5;
+$string = 'Danijel';
+$bool = true;
+// ispis varijabli
+echo $string;
+define('pitagora', 1.41)“;
+print pitagora;
+//reference
+$bool2 = &$bool;
+echo nl2br bool2;
+
+
+//
+$a = 5;
+$b = 4;
+
+$c = 'algebra';
+$d = "VD";
+
+echo $a + $b;
+
+$f = $c. '-' .$d;
+
+echo $f;
+
+//$f = $c . $d;
+//var_dump ($a, $b, $c, $d);
