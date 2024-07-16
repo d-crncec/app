@@ -1,6 +1,9 @@
 <?php
 
-$array1 = [1, 2, 3];
-$array2 = [
-    'name' => 'danijel'
+
+$array = [
+    1 => 'danijel',
+    '1' => 'b',
+    1.5 => 'c'
 ];
+var_dump($array);
