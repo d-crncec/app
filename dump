@@ -83,3 +83,164 @@ echo $f;
 
 //$f = $c . $d;
 //var_dump ($a, $b, $c, $d);
+
+
+<?php
+
+$array = [1, 2, 3];
+$array2 = [
+    'name' => 'Ivan',
+    'age' => 31,
+    'skills' => ['PHP', 'MySQL', 'Linux']
+];
+$array3 = [4, 5, 6];
+
+$array[] = 4;
+$array2['gender'] = 'm';
+
+$originalArray = $array;
+krsort($array);
+
+['name' => $name, 'age' => $age, 'skills' => $skills] = $array2;
+
+var_dump(
+    $array, 
+    $originalArray,
+    array_keys($array2),
+    array_values($array2),
+    count($array),
+    array_merge($originalArray, $array3),
+    $name,
+    $age,
+    $skills
+);
+
+<?php
+//varijable
+ $a = 11;
+ $b = 14;
+ $c = 15;
+
+ //logika
+ if ($b > $a AND $b < $c) {
+    echo 'positive' . PHP_EOL;
+ }
+    else {
+    echo 'negative' . PHP_EOL;
+    }
+
+    <?php
+//varijable
+ $a = 11;
+ $b = 14;
+ $c = 15;
+
+ //logika
+ if ($b > $a AND $b < $c) {
+    echo 'positive' . PHP_EOL;
+ }
+    else {
+    echo 'negative' . PHP_EOL;
+    }
+
+    <?php
+
+$a = 1;
+
+while ($a <= 10) {
+   echo $a++ . PHP_EOL;
+}
+
+<?php
+echo "with while: ";
+
+$a = 1;
+
+do {
+   echo $a++ . PHP_EOL;
+} while ($a <= 10);
+
+
+<?php
+$i = 1;
+
+for ($i < 10); {
+   
+};
+
+<?php
+// deklaracija funkcija
+
+function writeHello(){
+    echo ("hello World");
+}
+
+// pozivanje funkcije
+writeHello();
+
+?>
+
+<?php
+
+//$a = 10;
+//$b = 5;
+
+//funkcije
+function printSum (int $sum)
+{
+    echo $sum . PHP_EOL;
+}
+
+function getSum(int $a, int $b)
+{
+    return $a + $b;
+}
+
+// kraj funkcija
+
+printSum(getSum(211, 2020) . PHP_EOL);
+
+?>
+
+<?php
+//deklaracija funkcija
+function ispisTeksta ($tekst) {
+    echo ($tekst);
+}
+
+$tekst = "joina";
+var_dump ($tekst) . PHP_EOL;
+echo ($tekst) . PHP_EOL;
+?>
+
+<?php
+
+function getSum(&$sum,...$numbers)
+{
+    $sum = 0;
+    foreach ($numbers as $number) {
+        $sum += $number;
+    }
+}
+
+function printSum(int $sum)
+{
+    echo $sum . PHP_EOL;
+}
+
+//$sum = 0;
+getSum($sum, 100,200,300,400,500);
+getSum($sum, 1);
+printSum($sum);
+
+
+<?php
+
+function makecoffee($type = "cappuccino")
+{
+    return "Making a cup of $type.\n";
+}
+
+echo makecoffee();
+echo makecoffee(null);
+echo makecoffee("espresso");
